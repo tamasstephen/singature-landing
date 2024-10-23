@@ -17,4 +17,4 @@ CSS/SCSS: Styling the components with a modular approach.
 
 ![large screen](./screenshots/desktop.png "Title")
 ![medium screen](./screenshots/medium.png "Title")
-![mobile](./screenshots/mobile.png=375x)
+<img src="./screenshots/mobile.png" width="375" alt="mobile landing" />
