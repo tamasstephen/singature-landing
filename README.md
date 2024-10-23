@@ -4,10 +4,10 @@ This project is a responsive landing page built using React, TypeScript, and Vit
 
 ## Tech Stack
 
-React: Frontend UI library for building the page.
-TypeScript: For type safety and better development experience.
-Vite: Fast and lightweight development build tool.
-CSS/SCSS: Styling the components with a modular approach.
+- React: Frontend UI library for building the page.
+- TypeScript: For type safety and better development experience.
+- Vite: Fast and lightweight development build tool.
+- CSS/SCSS: Styling the components with a modular approach.
 
 ## Setup
 
