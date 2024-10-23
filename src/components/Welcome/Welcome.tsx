@@ -6,7 +6,10 @@ export const Welcome = () => {
     <section className={styles.welcome}>
       <div className={styles.content}>
         <div className={styles["text-wrapper"]}>
-          <h2>Üdvözlöm a Comnica Signature-ben!</h2>
+          <h2>
+            Üdvözlöm a <br />
+            Comnica Signature-ben!
+          </h2>
           <p>
             A következőkben végigvezetjük dokumentumai elfogadásán és aláírásán.
             A folyamat több percet is igénybe vehet, ezért kérjük, csak akkor
