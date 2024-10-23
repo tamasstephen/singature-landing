@@ -1,0 +1,16 @@
+@import "@/styles/base";
+
+.button {
+  background-color: $primary-green;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+}
+
+.button:hover {
+  background-color: $tertiary-green;
+}
