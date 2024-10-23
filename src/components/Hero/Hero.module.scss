@@ -47,18 +47,14 @@
       }
     }
 
-    .second {
-      align-items: center;
-      justify-content: center;
-      padding-left: 1rem;
-    }
-
     .first,
     .second {
       padding-top: $top-padding-large;
       width: 50%;
     }
     .second {
+      padding-left: 1rem;
+      align-items: center;
       transform: translateY(-15%);
       justify-content: flex-end;
       padding-right: 5rem;
