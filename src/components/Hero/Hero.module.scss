@@ -1,0 +1,82 @@
+@import "@/styles/base";
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+
+  .first {
+    padding-left: 2rem;
+    padding-top: $top-padding-base;
+
+    h1 {
+      color: $tertiary-green;
+      font-size: 1.75rem;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 700;
+      padding-top: 0.5rem;
+    }
+  }
+
+  .second {
+    display: flex;
+
+    padding-right: 2rem;
+  }
+
+  img {
+    object-fit: contain;
+    max-width: 300px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: $small-screen) {
+    & {
+      flex-direction: row;
+    }
+    .first {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.25rem;
+      }
+    }
+
+    .second {
+      align-items: center;
+      justify-content: center;
+      padding-left: 1rem;
+    }
+
+    .first,
+    .second {
+      padding-top: $top-padding-large;
+      width: 50%;
+    }
+    .second {
+      transform: translateY(-15%);
+      justify-content: flex-end;
+      padding-right: 5rem;
+      max-width: 500px;
+    }
+  }
+
+  @media screen and (min-width: $large-screen) {
+    .second {
+      transform: translateY(-7%);
+      img {
+        max-width: none;
+        width: 80%;
+      }
+    }
+
+    .first {
+      padding-left: 6rem;
+    }
+  }
+}

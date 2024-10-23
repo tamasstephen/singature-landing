@@ -1,3 +1,20 @@
+:root {
+  --font-black: #31363c;
+}
+
+html {
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 @font-face {
   font-family: "Roboto";
   src: local("Roboto"), url("./assets/fonts/RobotoFlex.ttf") format("truetype");
@@ -11,10 +28,12 @@
   height: 100%;
   width: 100%;
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
 }
 
 #root {
-  width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -26,9 +45,17 @@
 body {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
-  width: 100vw;
+  height: 100%;
   font-family: Roboto;
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
+  color: var(--font-black);
+}
+
+h1,
+h2,
+p {
+  padding: 0;
+  margin: 0;
 }
