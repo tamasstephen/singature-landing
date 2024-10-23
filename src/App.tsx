@@ -1,10 +1,14 @@
 import "./App.css";
+import { Navbar, Wrapper } from "@/components";
 
 function App() {
   return (
     <>
       <div className="background">
-        <div>Start</div>
+        <Navbar />
+        <div>
+          <Wrapper>Start</Wrapper>
+        </div>
       </div>
     </>
   );
