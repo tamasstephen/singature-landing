@@ -14,7 +14,7 @@
 const TEST_ENDPOINT_ONE = "https://jsonplaceholder.typicode.com/users";
 const TEST_ENDPOINT_TWO = "https://jsonplaceholder.typicode.com/posts";
 
-async function fetchUsers() {
+async function fetchUsersWithColors() {
   try {
     const [users, colors] = await Promise.all([
       fetch(TEST_ENDPOINT_ONE),
@@ -49,11 +49,11 @@ async function fetchUsers() {
     // if an error occurs we catch the error
   } catch (e) {
     // Log the error, if something went wrong
-    console.log(`Some error occured: ${e}`);
+    console.log(`Some error occured: ${e.message}`);
   } finally {
     // Finally log, when the process ends
     console.log("Process done");
   }
 }
 
-fetchUsers();
+fetchUsersWithColors();
